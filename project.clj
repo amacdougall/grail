@@ -6,14 +6,15 @@
                  [re-frame "0.7.0"]
                  [re-com "0.8.3"]
                  [garden "1.3.2"]
-                 [ns-tracker "0.3.0"]]
+                 [ns-tracker "0.3.0"]
+                 [com.rpl/specter "0.9.2"]]
 
   :plugins [[lein-cljsbuild "1.1.3"]
             [lein-garden "0.2.8"]]
 
   :min-lein-version "2.5.3"
 
-  :source-paths ["src/clj"]
+  :source-paths ["src/clj", "src/cljc"]
 
   :clean-targets ^{:protect false} ["resources/public/js/compiled" "target"
                                     "test/js"
@@ -30,6 +31,7 @@
   :profiles
   {:dev
    {:dependencies []
+    :source-paths ["test/clj"]
 
     :plugins      [[lein-figwheel "0.5.4-3"]
                    [lein-doo "0.1.6"]
