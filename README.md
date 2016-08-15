@@ -1,6 +1,11 @@
 # grail
 
-A [re-frame](https://github.com/Day8/re-frame) application designed to ... well, that part is up to you.
+A single-player MUD-like roguelike RPG. A fun project for playing around with
+procedural generation and RPG tactics. Inspired by MUDs such as Avalon and
+Achaea.
+
+Below is the documentation from the re-frame template. It's not inaccurate, but
+don't expect it to be relevant.
 
 ## Development Mode
 
